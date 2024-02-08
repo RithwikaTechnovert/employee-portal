@@ -3,53 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roles Details</title>
+    <title>Roles-details</title>
     <link rel="stylesheet" href="./css/roles-details.css">
 </head>
+
 <body>
-        <section class="left-navigation">
-            <div>
-                <img class="logo" src="./images/tezo-logo.png"/>
-                <img  class="handle" src="./images/handle.png"/>
-            </div>
+    <section class="left-navbar">
+        <div class="left-navbar-header">
+            <img class="logo" src="./images/tezo-logo.png"/>
+            <img class="handle" src="./images/handle.png"/>
             <p>ALL</p>
-            <a href="#" class="vertical-navbar-dashboard">
+            <a href="#" class="dashboard">
                 <img src="./images/dashboard-icon.svg"/>
                 <p>Dashboard</p>
             </a>
-            <a href="employees.html" class="vertical-navbar-employees">
+            <a href="employees.html"  class="employees">
                 <img src="./images/employees-icon-unselected.svg"/>
                 <p>Employees</p>
             </a>
-            <p>ROLES/USER MANAGEMENT</p>
-            <a class="vertical-options-roles" href="roles.html">
-                <div class="vertical-options-flex">
+            <p>Role/User Management</p>
+            <a href="roles.html" class="roles">
+                <div class="roles-flex">
                     <img src="./images/roles-red.svg"/>
                     <p>Roles</p>
                 </div>
-                <img src="./images/righticon-red.svg"/>
+                <img src="./images/righticon.svg"/>
             </a>
-            <a class="vertical-options-access" href="#">
-                <div class="vertical-options-flex">
+            <a class="access">
+                <div class="access-flex">
                     <img src="./images/access-rights-icon.svg"/>
                     <p>Access Rights</p>
                 </div>
                 <img src="./images/righticon.svg"/>
             </a>
-    
-            <section class="vertical-navbar-footer">
-                <p class="update">Install new update 2.3.13A</p>
-                <p class="upate-permission">Allow to update the launch for the new update for the AD Application</p>
-                <div>
-                    <button class="dismiss">Dismiss</button>
-                    <button class="accept">Accept</button>
-                </div>
-            </section>
-        </section>
-        <section class="right-navigation">
-            <div class="horizontal-navbar">
-                <img class="search-icon" src="./images/bx-search.png"/>
+        </div>
+        <div class="left-navbar-footer">
+            <p class="update">Install new update 2.3.13A</p>
+            <p class="update-permission">Allow to update the launch for the new update for the AD Application</p>
+            <div class="footer-btns">
+                <button class="dismiss-btn">Dismiss</button>
+                <button class="accept-btn">Accept</button>
+            </div>
+        </div>
+    </section>
+    <section class="right-main-body">
+        <div class="search-bar">
+            <div class="search">
+                <img src="./images/bx-search.png"/>
                 <input type="text" placeholder="Search"/>
+            </div>
+            <div class="search-icons">
                 <img src="./images/language-icon.svg"/>
                 <img src="./images/Categories.svg"/>
                 <img src="./images/mode-icon.svg"/>
@@ -58,205 +61,210 @@
                 <div class="avatar-details">
                     <p>Jhon Abraham</p>
                     <p class="admin">Admin</p>
-                </div>
+               </div>
                 <img class="right-icon" src="./images/righticon.svg"/>
             </div>
-            <section class="main-body">
-                <div class="portal-heading">
-                    <div class="portal-intro">
-                        <div class="portal-intro-flex">
-                        <p>Roles</p>
-                        <img src="./images/righticon.svg"/>
-                        <p>Employees</p>
-                        </div>
-                        <p class="sub-line">All the roles are configured here</p>
-                    </div>
-                    <button class="add-employee-button">+   ADD EMPLOYEE</button>
+        </div>
+        <div class="portal-heading">
+            <div class="portal-intro">
+                <div class="portal-intro-flex">
+                <p>Roles</p>
+                <img src="./images/righticon.svg"/>
+                <p>Employees</p>
                 </div>
-                <p class="role-heading">Role Description</p>
-                <p class="role-description">Configure the providers that are available to the users when they sign in.Configure the providers that are available to the users when they sign in.Configure the providers that are available to the users when they sign in.Configure the providers that are available to the users when they sign in.</p>
-                <section class="roles-details-cards">
-                    <div class="roles">
-                        <div class="profile">
-                            <img src="./images/avatar.png"/>
-                            <div>
-                                <p class="user-name">Robert Fox</p>
-                                <p class="user-dept">Head of product Design</p>
-                            </div>
-                        </div>
-                        <div class="profile-seating">
-                            <img src="./images/seating-icon.svg"/>
-                            <p>INF122</p>
-                        </div>
-                        <div class="profile-email">
-                            <img src="./images/email-icon.svg"/>
-                            <p>adamk@yahoo.com</p>
-                        </div>
-                        <div class="profile-dept">
-                            <img src="./images/employee-group.svg"/>
-                            <p>Technology</p>
-                        </div>
-                        <div class="profile-location">
-                            <img src="./images/loaction.svg"/>
-                            <p>Stockholm,New Hampshire</p>
-                        </div>
-                        <a href="#" class="view-all">
-                            <p>View</p>
-                            <img src="./images/right-arrow.svg"/>
-                        </a>
+                <p class="sub-line">All the roles are configured here</p>
+            </div>
+            <button class="add-employee-button">+   ADD EMPLOYEE</button>
+        </div>
+        <div>
+            <p class="heading">Role Description</p>
+            <p class="description">Configure the providers that are available to the users when they sign in.Configure the providers that are available to the users when they sign in.Configure the providers that are available to the users when they sign in.Configure the providers that are available to the users when they sign in.</p>
+        </div>
+        <div class="roles-cards">
+            <div class="role-details">
+                <div class="profile-details">
+                    <img src="./images/avatar.png"/>
+                    <div class="profile-details-name">
+                        <p class="user-name">Robert Fox</p>
+                        <p class="user-dept">Head of product Design</p>
                     </div>
+                </div>
+                <div class="seating-details">
+                    <img src="./images/seating-icon.svg"/>
+                    <p>INF122</p>
+                </div>
+                <div class="email-details">
+                    <img src="./images/email-icon.svg"/>
+                    <p>adamk@yahoo.com</p>
+                </div>
+                <div class="dept-details">
+                    <img src="./images/employee-group.svg"/>
+                    <p>Technology</p>
+                </div>
+                <div class="location-details">
+                    <img src="./images/loaction.svg"/>
+                    <p>Stockholm,New Hampshire</p>
+                </div>
+                <a href="employees.html" class="view-emp">
+                    <p>View</p>
+                    <img src="./images/right-arrow.svg"/>
+                </a>
+            </div>
 
-                    <div class="roles">
-                        <div class="profile">
-                            <img src="./images/avatar.png"/>
-                            <div>
-                                <p class="user-name">Marvin Mckinney</p>
-                                <p class="user-dept">Head of Engineering</p>
-                            </div>
-                        </div>
-                        <div class="profile-seating">
-                            <img src="./images/seating-icon.svg"/>
-                            <p>INF150</p>
-                        </div>
-                        <div class="profile-email">
-                            <img src="./images/email-icon.svg"/>
-                            <p>sravani@yahoo.com</p>
-                        </div>
-                        <div class="profile-dept">
-                            <img src="./images/employee-group.svg"/>
-                            <p>Admin</p>
-                        </div>
-                        <div class="profile-location">
-                            <img src="./images/loaction.svg"/>
-                            <p>Syracuse, Connecticut</p>
-                        </div>
-                        <a href="#" class="view-all">
-                            <p>View</p>
-                            <img src="./images/right-arrow.svg"/>
-                        </a>
+            <div class="role-details">
+                <div class="profile-details">
+                    <img src="./images/avatar.png"/>
+                    <div class="profile-details-name">
+                        <p class="user-name">Marvin Mckinney</p>
+                        <p class="user-dept">Head of Engineering</p>
                     </div>
+                </div>
+                <div class="seating-details">
+                    <img src="./images/seating-icon.svg"/>
+                    <p>INF150</p>
+                </div>
+                <div class="email-details">
+                    <img src="./images/email-icon.svg"/>
+                    <p>sravani@yahoo.com</p>
+                </div>
+                <div class="dept-details">
+                    <img src="./images/employee-group.svg"/>
+                    <p>Admin</p>
+                </div>
+                <div class="location-details">
+                    <img src="./images/loaction.svg"/>
+                    <p>Syracuse, Connecticut</p>
+                </div>
+                <a href="employees.html" class="view-emp">
+                    <p>View</p>
+                    <img src="./images/right-arrow.svg"/>
+                </a>
+            </div>
 
-                    <div class="roles">
-                        <div class="profile">
-                            <img src="./images/avatar.png"/>
-                            <div>
-                                <p class="user-name">Eleanor Pena</p>
-                                <p class="user-dept">Senior Interaction Designer</p>
-                            </div>
-                        </div>
-                        <div class="profile-seating">
-                            <img src="./images/seating-icon.svg"/>
-                            <p>INF240</p>
-                        </div>
-                        <div class="profile-email">
-                            <img src="./images/email-icon.svg"/>
-                            <p>grolschie@mac.com</p>
-                        </div>
-                        <div class="profile-dept">
-                            <img src="./images/employee-group.svg"/>
-                            <p>Customer Executive</p>
-                        </div>
-                        <div class="profile-location">
-                            <img src="./images/loaction.svg"/>
-                            <p>Portland, Illinois</p>
-                        </div>
-                        <a href="#" class="view-all">
-                            <p>View</p>
-                            <img src="./images/right-arrow.svg"/>
-                        </a>
+            <div class="role-details">
+                <div class="profile-details">
+                    <img src="./images/avatar.png"/>
+                    <div class="profile-details-name">
+                        <p class="user-name">Eleanor Pena</p>
+                        <p class="user-dept">Senior Interaction Designer</p>
                     </div>
+                </div>
+                <div class="seating-details">
+                    <img src="./images/seating-icon.svg"/>
+                    <p>INF240</p>
+                </div>
+                <div class="email-details">
+                    <img src="./images/email-icon.svg"/>
+                    <p>grolschie@mac.com</p>
+                </div>
+                <div class="dept-details">
+                    <img src="./images/employee-group.svg"/>
+                    <p>Customer Executive</p>
+                </div>
+                <div class="location-details">
+                    <img src="./images/loaction.svg"/>
+                    <p>Portland, Illinois</p>
+                </div>
+                <a href="employees.html" class="view-emp">
+                    <p>View</p>
+                    <img src="./images/right-arrow.svg"/>
+                </a>
+            </div>
 
-                    <div class="roles">
-                        <div class="profile">
-                            <img src="./images/avatar.png"/>
-                            <div>
-                                <p class="user-name">Jane Cooper</p>
-                                <p class="user-dept">Product Analyst</p>
-                            </div>
-                        </div>
-                        <div class="profile-seating">
-                            <img src="./images/seating-icon.svg"/>
-                            <p>INF389</p>
-                        </div>
-                        <div class="profile-email">
-                            <img src="./images/email-icon.svg"/>
-                            <p>chronos@aol.com</p>
-                        </div>
-                        <div class="profile-dept">
-                            <img src="./images/employee-group.svg"/>
-                            <p>Product</p>
-                        </div>
-                        <div class="profile-location">
-                            <img src="./images/loaction.svg"/>
-                            <p>Coppell, Virginia</p>
-                        </div>
-                        <a href="#" class="view-all">
-                            <p>View</p>
-                            <img src="./images/right-arrow.svg"/>
-                        </a>
+            <div class="role-details">
+                <div class="profile-details">
+                    <img src="./images/avatar.png"/>
+                    <div class="profile-details-name">
+                        <p class="user-name">Jane Cooper</p>
+                        <p class="user-dept">Product Analyst</p>
                     </div>
+                </div>
+                <div class="seating-details">
+                    <img src="./images/seating-icon.svg"/>
+                    <p>INF389</p>
+                </div>
+                <div class="email-details">
+                    <img src="./images/email-icon.svg"/>
+                    <p>chronos@aol.com</p>
+                </div>
+                <div class="dept-details">
+                    <img src="./images/employee-group.svg"/>
+                    <p>Product</p>
+                </div>
+                <div class="location-details">
+                    <img src="./images/loaction.svg"/>
+                    <p>Coppell, Virginia</p>
+                </div>
+                <a href="employees.html" class="view-emp">
+                    <p>View</p>
+                    <img src="./images/right-arrow.svg"/>
+                </a>
+            </div>
 
-                    <div class="roles">
-                        <div class="profile">
-                            <img src="./images/avatar.png"/>
-                            <div>
-                                <p class="user-name">Floyd Miles</p>
-                                <p class="user-dept">Visual Designer</p>
-                            </div>
-                        </div>
-                        <div class="profile-seating">
-                            <img src="./images/seating-icon.svg"/>
-                            <p>INF209</p>
-                        </div>
-                        <div class="profile-email">
-                            <img src="./images/email-icon.svg"/>
-                            <p>dgatwood@msn.com</p>
-                        </div>
-                        <div class="profile-dept">
-                            <img src="./images/employee-group.svg"/>
-                            <p>Customer Executive</p>
-                        </div>
-                        <div class="profile-location">
-                            <img src="./images/loaction.svg"/>
-                            <p>Lansing, Illinois</p>
-                        </div>
-                        <a href="#" class="view-all">
-                            <p>View</p>
-                            <img src="./images/right-arrow.svg"/>
-                        </a>
+            <div class="role-details">
+                <div class="profile-details">
+                    <img src="./images/avatar.png"/>
+                    <div class="profile-details-name">
+                        <p class="user-name">Floyd Miles</p>
+                        <p class="user-dept">Visual Designer</p>
                     </div>
+                </div>
+                <div class="seating-details">
+                    <img src="./images/seating-icon.svg"/>
+                    <p>INF209</p>
+                </div>
+                <div class="email-details">
+                    <img src="./images/email-icon.svg"/>
+                    <p>dgatwood@msn.com</p>
+                </div>
+                <div class="dept-details">
+                    <img src="./images/employee-group.svg"/>
+                    <p>Customer Executive</p>
+                </div>
+                <div class="location-details">
+                    <img src="./images/loaction.svg"/>
+                    <p>Lansing, Illinois</p>
+                </div>
+                <a href="employees.html" class="view-emp">
+                    <p>View</p>
+                    <img src="./images/right-arrow.svg"/>
+                </a>
+            </div>
 
-                    <div class="roles">
-                        <div class="profile">
-                            <img src="./images/avatar.png"/>
-                            <div>
-                                <p class="user-name">Dianne Russel</p>
-                                <p class="user-dept">Full Stack Software Engineer</p>
-                            </div>
-                        </div>
-                        <div class="profile-seating">
-                            <img src="./images/seating-icon.svg"/>
-                            <p>INF922</p>
-                        </div>
-                        <div class="profile-email">
-                            <img src="./images/email-icon.svg"/>
-                            <p>kspitiri@live.com</p>
-                        </div>
-                        <div class="profile-dept">
-                            <img src="./images/employee-group.svg"/>
-                            <p>Human Research</p>
-                        </div>
-                        <div class="profile-location">
-                            <img src="./images/loaction.svg"/>
-                            <p>Corona, Michigan</p>
-                        </div>
-                        <a href="#" class="view-all">
-                            <p>View</p>
-                            <img src="./images/right-arrow.svg"/>
-                        </a>
+            <div class="role-details">
+                <div class="profile-details">
+                    <img src="./images/avatar.png"/>
+                    <div class="profile-details-name">
+                        <p class="user-name">Dianne Russel</p>
+                        <p class="user-dept">Full Stack Software Engineer</p>
                     </div>
-                </section>
-            </section><!--main-body---->
-        </section><!--right--part-->
-</body>
-</html>
+                </div>
+                <div class="seating-details">
+                    <img src="./images/seating-icon.svg"/>
+                    <p>INF922</p>
+                </div>
+                <div class="email-details">
+                    <img src="./images/email-icon.svg"/>
+                    <p>kspitiri@live.com</p>
+                </div>
+                <div class="dept-details">
+                    <img src="./images/employee-group.svg"/>
+                    <p>Human Research</p>
+                </div>
+                <div class="location-details">
+                    <img src="./images/loaction.svg"/>
+                    <p>Corona, Michigan</p>
+                </div>
+                <a href="employees.html" class="view-emp">
+                    <p>View</p>
+                    <img src="./images/right-arrow.svg"/>
+                </a>
+            </div>
+
+
+
+
+
+
+        </div>
+    </section>

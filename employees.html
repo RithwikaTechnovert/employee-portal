@@ -7,77 +7,81 @@
     <link rel="stylesheet" href="./css/employees.css">
 </head>
 <body>
-    <section class="left-navigation">
-        <div>
-            <img class="logo" src="./images/tezo-logo.png"/>
-            <img  class="handle" src="./images/handle.png"/>
+    <section class="left-navbar">
+        <div class="left-navbar-header">
+            <img class="logo" src="./images/tezo-logo.png" />
+            <img class="handle" src="./images/handle.png" />
+            <p>ALL</p>
+            <a class="dashboard">
+                <img src="./images/dashboard-icon.svg"/>
+                <p>Dashboard</p>
+            </a>
+            <a href="#" class="employees">
+                <img src="./images/employees-icon.svg"/>
+                <p>Employees</p>
+            </a>
+            <p>Role/User Management</p>
+            <a href="roles.html" class="roles">
+                <div class="roles-flex">
+                    <img src="./images/roles.svg"/>
+                    <p>Roles</p>
+                </div>
+                <img src="./images/righticon.svg"/>
+            </a>
+            <a class="access">
+                <div class="access-flex">
+                    <img src="./images/access-rights-icon.svg"/>
+                    <p>Access Rights</p>
+                </div>
+                <img src="./images/righticon.svg"/>
+            </a>
         </div>
-        <p>ALL</p>
-        <a href="#" class="vertical-navbar-dashboard">
-            <img src="./images/dashboard-icon.svg"/>
-            <p>Dashboard</p>
-        </a>
-        <a href="#" class="vertical-navbar-employees">
-            <img src="./images/employees-icon.svg"/>
-            <p>Employees</p>
-        </a>
-        <p>ROLES/USER MANAGEMENT</p>
-        <a class="vertical-options-roles" href="roles.html">
-            <div class="vertical-options-flex">
-                <img src="./images/roles.svg"/>
-                <p>Roles</p>
-            </div>
-            <img src="./images/righticon.svg"/>
-        </a>
-        <a class="vertical-options-access" href="#">
-            <div class="vertical-options-flex">
-                <img src="./images/access-rights-icon.svg"/>
-                <p>Access Rights</p>
-            </div>
-            <img src="./images/righticon.svg"/>
-        </a>
-
-        <section class="vertical-navbar-footer">
+        <div class="left-navbar-footer">
             <p class="update">Install new update 2.3.13A</p>
-            <p class="upate-permission">Allow to update the launch for the new update for the AD Application</p>
-            <div>
-                <button class="dismiss">Dismiss</button>
-                <button class="accept">Accept</button>
+            <p class="update-permission">Allow to update the launch for the new update for the AD Application</p>
+            <div class="footer-btns">
+                <button class="dismiss-btn">Dismiss</button>
+                <button class="accept-btn">Accept</button>
             </div>
-        </section>
-    </section>
-    <section class="right-navigation">
-        <div class="horizontal-navbar">
-            <img class="search-icon" src="./images/bx-search.png"/>
-            <input type="text" placeholder="Search">
-            <img src="./images/language-icon.svg"/>
-            <img src="./images/Categories.svg"/>
-            <img src="./images/mode-icon.svg"/>
-            <img src="./images/notifications-icon.svg"/>
-            <img class="avatar" src="./images/avatar.png"/>
-            <div class="avatar-details">
-                <p>Jhon Abraham</p>
-                <p class="admin">Admin</p>
-            </div>
-            <img class="right-icon" src="./images/righticon.svg"/>
         </div>
-        <section class="main-body">
+    </section>
+    <section class="right-main-body">
+        <div class="search-bar">
+            <div class="search">
+                <img src="./images/bx-search.png"/>
+                <input type="text" placeholder="Search"/>
+            </div>
+            <div class="search-icons">
+                <img src="./images/language-icon.svg"/>
+                <img src="./images/Categories.svg"/>
+                <img src="./images/mode-icon.svg"/>
+                <img src="./images/notifications-icon.svg"/>
+                <img class="avatar" src="./images/avatar.png"/>
+                <div class="avatar-details">
+                    <p>Jhon Abraham</p>
+                    <p class="admin">Admin</p>
+               </div>
+                <img class="right-icon" src="./images/righticon.svg"/>
+            </div>
+        </div>
         <div class="portal-heading">
             <div class="portal-intro">
-                <p>Employees</p>
+                <p class="heading">Employees</p>
                 <p class="sub-line">Find all of your company's employee accounts and their associated roles</p>
             </div>
-            <div class="portal-heading-btns">
+            <div class="portal-intro-btns">
                 <button class="export-btn">
                     <img src="./images/export.png"/>
                     EXPORT
                 </button>
-                <button class="add-employee-btn">+  ADD EMPLOYEE</button>
+                <button class="add-btn">
+                    +  ADD EMPLOYEE
+                </button>
             </div>
         </div>
-        <div class="filter-bar">
+        <div class="letters-filter">
             <img class="filter-icon"src="./images/filter.svg"/>
-            <ul class="letters-filter">
+            <ul class="letters-list">
                 <li><a href="#">A</a></li>
                 <li><a href="#">B</a></li>
                 <li><a href="#">C</a></li>
@@ -104,28 +108,30 @@
                 <li><a href="#">X</a></li>
                 <li><a href="#">Y</a></li>
                 <li><a href="#">Z</a></li>
+                <li><a href="#">Z</a></li>
             </ul>
         </div>
         <div class="filter-options">
-            <div class="filter-options-opts">
+            <div class="filter-select">
                 <p>Filter</p>
                 <img src="./images/bars-filter.svg"/>
-                <select class="select-box">
-                    <option>Department</option>
-                </select>
                 <select class="select-box">
                     <option>Status</option>
                 </select>
                 <select class="select-box">
                     <option>Location</option>
                 </select>
+                <select class="select-box">
+                    <option>Department</option>
+                </select>
             </div>
-            <div class="filter-buttons">
-                <button class="filter-reset">Reset</button>
-                <button class="filter-apply">Apply</button>
+            <div class="filter-options-btns">
+                <button class="reset">Reset</button>
+                <button class="apply">Apply</button>
             </div>
         </div>
-        <section class="table-employees">
+
+        <section class="table-employees" >
             <table>
                 <thead>
                    <!--<tr>-->
@@ -163,25 +169,25 @@
                             <img src="./images/sorticon.svg"/>
                         </div>
                     </td>
-                    <td>
+                    <td class="role-col">
                         <div class="table-second-row">
                             <p>ROLE</p>
                             <img src="./images/sorticon.svg"/>
                         </div>
                     </td>
-                    <td>
+                    <td class="emp-col">
                         <div class="table-second-row">
                             <p>EMPNO</p>
                             <img src="./images/sorticon.svg"/>
                         </div>
                     </td>
-                    <td>
+                    <td class="status">
                         <div class="table-second-row">
                             <p>STATUS</p>
                             <img src="./images/sorticon.svg"/>
                         </div>
                     </td>
-                    <td>
+                    <td class="join-col">
                         <div class="table-second-row">
                             <p>JOIN DT</p>
                             <img src="./images/sorticon.svg"/>
@@ -210,16 +216,16 @@
                     <td>
                         <p>Product Engg</p>
                     </td>
-                    <td>
+                    <td class="role-col">
                         <p>Full Stack Developer</p>
                     </td>
-                    <td>
+                    <td class="emp-col">
                         <p>TZ002341</p>
                     </td>
                     <td class="status">
                         <button>Active</button>
                     </td>
-                    <td>
+                    <td class="join-col">
                         <p>12/03/2023</p>
                     </td>
                     <td class="others">
@@ -245,16 +251,16 @@
                     <td>
                         <p>Product Engg</p>
                     </td>
-                    <td>
+                    <td class="role-col">
                         <p>Full Stack Developer</p>
                     </td>
-                    <td>
+                    <td class="emp-col">
                         <p>TZ002341</p>
                     </td>
                     <td class="status">
                         <button>Active</button>
                     </td>
-                    <td>
+                    <td class="join-col">
                         <p>12/03/2023</p>
                     </td>
                     <td class="others">
@@ -280,16 +286,16 @@
                     <td>
                         <p>Product Engg</p>
                     </td>
-                    <td>
+                    <td class="role-col">
                         <p>Full Stack Developer</p>
                     </td>
-                    <td>
+                    <td class="emp-col">
                         <p>TZ002341</p>
                     </td>
                     <td class="status">
                         <button>Active</button>
                     </td>
-                    <td>
+                    <td class="join-col">
                         <p>12/03/2023</p>
                     </td>
                     <td class="others">
@@ -315,16 +321,16 @@
                     <td>
                         <p>Product Engg</p>
                     </td>
-                    <td>
+                    <td class="role-col">
                         <p>Full Stack Developer</p>
                     </td>
-                    <td>
+                    <td class="emp-col">
                         <p>TZ002341</p>
                     </td>
                     <td class="status">
                         <button>Active</button>
                     </td>
-                    <td>
+                    <td class="join-col">
                         <p>12/03/2023</p>
                     </td>
                     <td class="others">
@@ -350,16 +356,16 @@
                     <td>
                         <p>Product Engg</p>
                     </td>
-                    <td>
+                    <td class="role-col">
                         <p>Full Stack Developer</p>
                     </td>
-                    <td>
+                    <td class="emp-col">
                         <p>TZ002341</p>
                     </td>
                     <td class="status">
                         <button>Active</button>
                     </td>
-                    <td>
+                    <td class="join-col">
                         <p>12/03/2023</p>
                     </td>
                     <td class="others">
@@ -385,16 +391,16 @@
                     <td>
                         <p>Product Engg</p>
                     </td>
-                    <td>
+                    <td class="role-col">
                         <p>Full Stack Developer</p>
                     </td>
-                    <td>
+                    <td class="emp-col">
                         <p>TZ002341</p>
                     </td>
                     <td class="status">
                         <button>Active</button>
                     </td>
-                    <td>
+                    <td class="join-col">
                         <p>12/03/2023</p>
                     </td>
                     <td class="others">
@@ -420,16 +426,16 @@
                     <td>
                         <p>Product Engg</p>
                     </td>
-                    <td>
+                    <td class="role-col">
                         <p>Full Stack Developer</p>
                     </td>
-                    <td>
+                    <td class="emp-col">
                         <p>TZ002341</p>
                     </td>
                     <td class="status">
                         <button>Active</button>
                     </td>
-                    <td>
+                    <td class="join-col">
                         <p>12/03/2023</p>
                     </td>
                     <td class="others">
@@ -439,7 +445,12 @@
             </tbody>
             </table>
         </section>
+
+
+
+
+
+
     </section>
-</section>
 </body>
 </html>
