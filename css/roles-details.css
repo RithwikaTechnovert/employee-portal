@@ -1,0 +1,249 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    border-radius: 5.4px 5.4px 5.4px 5.4px;
+    outline:none;
+}
+button:hover, a:hover,.handle:hover{
+    cursor:grab;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: "Poppins";
+    display:grid;
+    height: 100%;
+    grid-template-columns: 20% 80%;
+    margin:0;
+    padding-bottom:0.5rem;
+    padding-top:0.5rem;
+    font-size:0.9rem;
+}
+img{
+    margin-right:0.5rem;
+}
+.left-navbar{
+    padding-left:1rem;
+    padding-right:1rem;
+    height:100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.logo{
+    width:7rem;
+    position:relative;
+}
+.handle{
+    position:absolute;
+    left:13rem;
+}
+.left-navbar>p{
+    font-size:0.8rem;
+}
+.dashboard, .employees, .roles-flex, .access-flex, .roles, .access,.footer-btns{
+    display: flex;
+}
+.roles{
+    color:#F53733 ;
+    background-color: #FFE9D9;
+}
+.left-navbar-header>p{
+    color:#c5c6ce;
+    font-size:0.8rem;
+}
+.dashboard>p, .employees>p,.roles-flex>p, .access-flex>p{
+    margin-bottom:0.5rem;
+    margin-top:0.5rem;
+    font-size:0.8rem;
+    color:#6a6b70;
+}
+.roles, .access{
+    justify-content: space-between;
+}
+.footer-btns{
+    gap:0.5rem;
+}
+.dismiss-btn{
+    width:5rem;
+    background-color:#FFE9D9;
+    font-size:0.7rem;
+    color:#F53733;
+    border:none;
+    padding:0.5rem 0.5rem 0.5rem 0.5rem;
+}
+.accept-btn{
+    width:5rem;
+    font-size:0.7rem;
+    background-color: #F53733;
+    color:white;
+    border:none;
+    padding:0.5rem 0.5rem 0.5rem 0.5rem;
+}
+.left-navbar-footer{
+    background-color: #FFF6E5;
+    font-size: 0.7rem;
+    width:90%;
+    padding:0.5rem 0.5rem 1rem 0.5rem;
+}
+.update{
+    color:#F53733;
+    font-weight: bold;
+}
+.update-permission{
+    color:#6a6b70;
+}
+.right-main-body{
+    padding-left:0.5rem;
+    padding-right:0.5rem;
+    background-color: #FFFCEB;
+}
+.search-bar{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:0.8rem;
+    padding-left:0.8rem;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgb(0 0 0/ 0.2);
+}
+.search>input{
+    border:none;
+}
+.search-icons,.search, .portal-intro-btns{
+    display:flex;
+    align-items: center;
+}
+.search-icons>img{
+    margin-right:0.3rem;
+}
+.right-icon{
+    transform: rotate(90deg);
+}
+.avatar{
+    border-radius: 50%;
+    width:2rem;
+    height:2rem;
+}
+.avatar-details>p{
+    font-size:0.6rem;
+    margin-top:0rem;
+    margin-bottom:0.2rem;
+}
+.admin{
+    color:black;
+    font-weight: bold;
+}
+.portal-intro{
+    color:#4b4d5a;
+    font-weight: bold;
+    margin-top:0.8rem;
+}
+.portal-intro-flex>p{
+    margin-top:0rem;
+    margin-bottom:0rem;
+}
+.portal-intro-flex{
+    display: flex;
+}
+.portal-intro-flex>img{
+    margin-right:0.3rem;
+}
+.portal-intro>.sub-line{
+    font-size:0.7rem;
+    color:#686A7E;
+    font-weight: lighter;
+}
+.portal-heading{
+    margin-top:1rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.add-employee-button{
+    height:2rem;
+    background-color:#F53733;
+    color:white;
+    margin-right:0.2rem;
+    width: 12.5em;
+    border:none;
+    border-radius: 5.4px 5.4px 5.4px 5.4px;
+}
+.heading{
+    font-size:0.8rem;
+    color:black;
+    font-weight: bold;
+}
+.description{
+    font-size: 0.7rem;
+    color:#686A7E;
+}
+.roles-cards{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:0.5rem;
+   overflow-y: scroll;
+    height:23.875rem;
+}
+.role-details{
+    background-color: white;
+    border:0.001vw solid #7e7f8b;
+    padding:1rem 0.5rem 0.5rem 1.3rem;
+}
+.profile-details,.seating-details, .email-details, .dept-details, .location-details, .view-emp{
+    display:flex;
+    align-items: center;
+}
+.profile-details{
+    margin-bottom:0.5rem;
+}
+.profile-details>img{
+    border-radius:50%;
+}
+.profile-details-name>p{
+    margin-top:0;
+    margin-bottom:0;
+}
+.user-name{
+    font-size:0.8rem;
+    color:black;
+}
+.user-dept{
+    font-size:0.7rem;
+    color:#686A7E;
+}
+.view-emp{
+    font-size: 0.6rem;
+    gap:0.3rem;
+    justify-content: right;
+}
+.seating-details>p, .email-details>p, .dept-details>p, .location-details>p, .view-emp>p{
+    font-size:0.7rem;
+    margin-top:0.3rem;
+    margin-bottom:0.3rem;
+    color:#5a5b5f;
+}
+
+@media screen and (min-width:768px) and (max-width:976px){
+    .handle{
+        left:8rem;
+    }
+    .roles-cards{
+        height: 15.875rem;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1184px){
+    .handle{
+        left:11rem;
+    }
+    .roles-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
