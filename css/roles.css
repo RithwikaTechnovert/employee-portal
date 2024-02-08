@@ -7,10 +7,13 @@
     outline:none;
 }
 button:hover, a:hover,.handle:hover{
-    cursor:grab;
+    cursor:pointer;
 }
 a{
     text-decoration: none;
+}
+button, .select-box{
+    font-family: "Poppins";
 }
 body{
     font-family: "Poppins";
@@ -33,20 +36,23 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position:relative;
 }
 .logo{
     width:7rem;
-    position:relative;
+    padding-top:0.5rem;
 }
 .handle{
     position:absolute;
-    left:13rem;
+    right:-1rem;
+    top:0.5rem;
 }
 .left-navbar>p{
     font-size:0.8rem;
 }
 .dashboard, .employees, .roles-flex, .access-flex, .roles, .access,.footer-btns{
     display: flex;
+    padding:0.3rem 0.5rem 0.3rem 0.5rem;
 }
 .roles{
     color:#F53733 ;
@@ -61,6 +67,9 @@ img{
     margin-top:0.5rem;
     font-size:0.8rem;
     color:#6a6b70;
+}
+.roles>p{
+    color:#F53733;
 }
 .roles, .access{
     justify-content: space-between;
@@ -95,7 +104,7 @@ img{
     font-weight: bold;
 }
 .update-permission{
-    color:#6a6b70;
+    color:#97999f;
 }
 .right-main-body{
     padding-left:0.5rem;
@@ -107,20 +116,24 @@ img{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-right:0.8rem;
-    padding-left:0.8rem;
+    padding: 0.3rem 0.5rem 0.3rem 0.8rem;
     background-color: white;
     box-shadow: 0px 0px 5px rgb(0 0 0/ 0.2);
+    position:sticky;
+}
+.search>img{
+    width:1.3rem;
 }
 .search>input{
     border:none;
+    opacity:0.4;
 }
 .search-icons,.search, .portal-intro-btns{
     display:flex;
     align-items: center;
 }
 .search-icons>img{
-    margin-right:0.3rem;
+    margin-right:0rem;
 }
 .right-icon{
     transform: rotate(90deg);
@@ -133,7 +146,8 @@ img{
 .avatar-details>p{
     font-size:0.6rem;
     margin-top:0rem;
-    margin-bottom:0.2rem;
+    margin-bottom:0rem;
+    padding-left:0.3rem;
 }
 .admin{
     color:black;
@@ -158,7 +172,7 @@ img{
 }
 .add-btn{
     font-size:0.8rem;
-    width:9.5rem;
+    width:9rem;
     background-color:#F53733;
     color:white;
     border:none;
@@ -195,6 +209,7 @@ img{
     color:#4b4d5a;
     margin-right:0.4rem;
     font-size:0.7rem;
+    padding:0rem 0.3rem 0rem 0.3rem;
 }
 .reset, .apply{
     padding:0.3rem 0.5rem 0.3rem 0.5rem;
@@ -220,8 +235,8 @@ img{
     display:grid;
     grid-template-columns: repeat(3,1fr);
     gap:0.5rem;
-    height:23.875rem;
-    overflow-y: scroll;
+    /* height:23.875rem;
+    overflow-y: scroll; */
 }
 .role{
     background-color: white;
@@ -259,22 +274,25 @@ img{
     color:#4b4d5a;
     font-size:0.6rem;
 }
+.view-emp>img{
+    width:1rem;
+}
 
 @media screen and (min-width:768px) and (max-width:976px){
     .dismiss-btn, .accept-btn{
         width:3.2rem;
     }
-    .handle{
+    /* .handle{
         left:8rem;
-    }
+    } */
     .roles-cards{
         grid-template-columns: repeat(2,1fr);
     }
 }
 @media screen and (min-width:992px) and (max-width:1184px){
-    .handle{
+    /* .handle{
         left:11rem;
-    }
+    } */
     .roles-cards{
         height: 29.875rem;
         grid-template-columns: repeat(2,1fr);

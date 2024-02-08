@@ -7,10 +7,13 @@
     outline:none;
 }
 button:hover, a:hover,.handle:hover{
-    cursor:grab;
+    cursor:pointer;
 }
 a{
     text-decoration: none;
+}
+button{
+    font-family: "Poppins";
 }
 body{
     font-family: "Poppins";
@@ -33,20 +36,23 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position:relative;
 }
 .logo{
     width:7rem;
-    position:relative;
+    padding-top:0.5rem;
 }
 .handle{
     position:absolute;
-    left:13rem;
+    right:-1rem;
+    top:0.5rem;
 }
 .left-navbar>p{
     font-size:0.8rem;
 }
 .dashboard, .employees, .roles-flex, .access-flex, .roles, .access,.footer-btns{
     display: flex;
+    padding:0.3rem 0.5rem 0.3rem 0.5rem;
 }
 .roles{
     color:#F53733 ;
@@ -61,6 +67,9 @@ img{
     margin-top:0.5rem;
     font-size:0.8rem;
     color:#6a6b70;
+}
+.roles>p{
+    color:#F53733;
 }
 .roles, .access{
     justify-content: space-between;
@@ -95,7 +104,7 @@ img{
     font-weight: bold;
 }
 .update-permission{
-    color:#6a6b70;
+    color:#97999f;
 }
 .right-main-body{
     padding-left:0.5rem;
@@ -103,6 +112,7 @@ img{
     background-color: #FFFCEB;
 }
 .search-bar{
+    padding: 0.3rem 0.5rem 0.3rem 0.8rem;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -111,16 +121,21 @@ img{
     padding-left:0.8rem;
     background-color: white;
     box-shadow: 0px 0px 5px rgb(0 0 0/ 0.2);
+    position:sticky;
+}
+.search>img{
+    width:1.3rem;
 }
 .search>input{
     border:none;
+    opacity:0.4;
 }
 .search-icons,.search, .portal-intro-btns{
     display:flex;
     align-items: center;
 }
 .search-icons>img{
-    margin-right:0.3rem;
+    margin-right:0rem;
 }
 .right-icon{
     transform: rotate(90deg);
@@ -133,7 +148,8 @@ img{
 .avatar-details>p{
     font-size:0.6rem;
     margin-top:0rem;
-    margin-bottom:0.2rem;
+    margin-bottom:0rem;
+    padding-left:0.3rem;
 }
 .admin{
     color:black;
@@ -160,7 +176,7 @@ img{
     font-weight: lighter;
 }
 .portal-heading{
-    margin-top:1rem;
+    margin-top:0.5rem;
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -169,8 +185,9 @@ img{
     height:2rem;
     background-color:#F53733;
     color:white;
+    font-size:0.7rem;
     margin-right:0.2rem;
-    width: 12.5em;
+    width: 10rem;
     border:none;
     border-radius: 5.4px 5.4px 5.4px 5.4px;
 }
@@ -178,6 +195,8 @@ img{
     font-size:0.8rem;
     color:black;
     font-weight: bold;
+    margin-top:0.3rem;
+    margin-bottom:0.3rem;
 }
 .description{
     font-size: 0.7rem;
@@ -187,8 +206,8 @@ img{
     display:grid;
     grid-template-columns: repeat(3,1fr);
     gap:0.5rem;
-   overflow-y: scroll;
-    height:23.875rem;
+   /* overflow-y: scroll;
+    height:23.875rem; */
 }
 .role-details{
     background-color: white;
@@ -222,6 +241,9 @@ img{
     gap:0.3rem;
     justify-content: right;
 }
+.view-emp>img{
+    width:1rem;
+}
 .seating-details>p, .email-details>p, .dept-details>p, .location-details>p, .view-emp>p{
     font-size:0.7rem;
     margin-top:0.3rem;
@@ -230,9 +252,9 @@ img{
 }
 
 @media screen and (min-width:768px) and (max-width:976px){
-    .handle{
+    /* .handle{
         left:8rem;
-    }
+    } */
     .roles-cards{
         height: 15.875rem;
         grid-template-columns: repeat(2,1fr);
@@ -240,9 +262,9 @@ img{
 }
 
 @media screen and (min-width:992px) and (max-width:1184px){
-    .handle{
+    /* .handle{
         left:11rem;
-    }
+    } */
     .roles-cards{
         grid-template-columns: repeat(2,1fr);
     }
