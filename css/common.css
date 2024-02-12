@@ -28,7 +28,7 @@ body{
 img{
     margin-right:0.5rem;
 }
-.left-navbar{
+.side-navbar{
     padding-left:1rem;
     padding-right:1rem;
     height:100vh;
@@ -48,7 +48,7 @@ img{
     right:-1rem;
     top:0.5rem;
 }
-.left-navbar>p{
+.side-navbar>p{
     font-size:0.8rem;
 }
 .dashboard, .employees, .roles-flex, .access-flex, .roles, .access,.footer-btns{
@@ -62,7 +62,7 @@ img{
     color:#6a6b70;
 }
 
-.left-navbar-header>p{
+.side-nav-container>p{
     color:#c5c6ce;
     font-size:0.8rem;
 }
@@ -88,7 +88,7 @@ img{
     border:none;
     padding:0.5rem 0.5rem 0.5rem 0.5rem;
 }
-.left-navbar-footer{
+.side-nav-footer{
     background-color: #FFF6E5;
     font-size: 0.7rem;
     width:90%;
@@ -101,7 +101,7 @@ img{
 .update-permission{
     color:#97999f;
 }
-.right-main-body{
+.main-body{
     padding-left:0.5rem;
     padding-right:0.5rem;
     background-color: #FFFCEB;

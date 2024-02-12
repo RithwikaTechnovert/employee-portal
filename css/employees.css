@@ -120,20 +120,20 @@
 }
 
 
-.table-first-row{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom:0.2rem;
+
+
+.table-edits{
+    margin-top:0.5rem;
+    display:flex;
+    justify-content:space-between;
     border-bottom: 1.5px solid #ddd;
     background-color: white;
     padding:0.5rem 0.5rem 0.5rem 0.5rem;
-    justify-content: space-between;
-    border-collapse:collapse;
 }
-.table-first-row-btns{
-    display:flex;
+.table-edits-items{
+    display: flex;
 }
-.table-first-row-btns>button{
+.table-edits-items>button{
     background-color: #e78382;
     color:white;
     border:none;
@@ -142,28 +142,55 @@
     box-shadow: #FFF2E1;
 }
 .table-employees{
-    margin-top:1rem;
-    margin-bottom:1rem;
     font-size: 0.7rem;
     height:21.875rem;
     overflow-y: scroll;
     border-collapse: collapse;
-    border-bottom: grey; 
 }
 table{
     box-shadow: 0 0 1px #e78382 ;
     width:100%;
     border-collapse: collapse;
     background-color: white;
-    table-layout: auto;
     padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.user-details{
+    display: flex;
+}
+.user-details>img{
+    border-radius:50%;
+    width:1.5rem;
+    height:2rem;
+}
+.user-details p{
+    margin-bottom:0.1rem;
+    margin-top:0.1rem;
+}
+.user-email{
+    color:#686A7E;
+}
+.status-btn{
+    background-color:#F2F5D8;
+    border-radius: 6.5px 6.5px 6.5px 6.5px;
+    border:none;
+    padding:0.5rem 1rem 0.5rem 1rem;
+    color:darkgreen;
+    font-family: "Poppins";
+    font-size:0.7rem;
 }
 tr{
     color:black;
 }
-.col-names{
+thead>tr>th{
+    padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+    text-align: left;
+    justify-content: left;
+    color:#6d6e76;
+}
+thead{
     background-color:#FFF2E1;
-    font-size:0.7rem;
+    padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+    height:2.7rem;
 }
 tr:hover{
     background-color: #FFF2E1;
@@ -171,48 +198,6 @@ tr:hover{
 td{
     border-bottom: 1.5px solid #ddd;
     padding: 0.3rem 0.3rem 0.3rem 0.3rem;
-}
-.check-col{
-    margin-right:1rem;
-    padding-left:1rem;
-}
-.others{
-    font-weight:bolder;
-    margin-right:1rem;
-    padding-right:1rem;
-}
-.table-second-row{
-    display: flex;
-    font-size:0.7rem;
-    color:#4b4d5a;
-    font-weight: bold;
-}
-.table-second-row>img{
-    width:1.1em;
-}
-.user-col{
-    display: flex;
-}
-.user-col>img{
-    width:2rem;
-    border-radius: 50%;
-    margin-right:0.5rem;
-}
-.user-details>p{
-    margin-top:0rem;
-    margin-bottom:0rem;
-}
-.user-details-email{
-    font-size: 0.6rem;
-    color:#686A7E;
-}
-.status>button{
-    font-size:0.7rem;
-    background-color:#F2F5D8;
-    border-radius: 5.5px 5.5px 5.5px 5.5px;
-    border:none;
-    padding:0.3rem 1rem 0.3rem 1rem;
-    color:darkgreen;
 }
 
 @media screen and (min-width:768px) and (max-width:976px){

@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./css/employees.css">
 </head>
 <body>
-    <section class="left-navbar">
-        <div class="left-navbar-header">
+    <section class="side-navbar">
+        <div class="side-nav-container">
             <img class="logo" src="./images/tezo-logo.png" />
             <img class="handle" src="./images/handle.png" />
             <p>ALL</p>
@@ -37,7 +37,7 @@
                 <img src="./images/righticon.svg"/>
             </a>
         </div>
-        <div class="left-navbar-footer">
+        <div class="side-nav-footer">
             <p class="update">Install new update 2.3.13A</p>
             <p class="update-permission">Allow to update the launch for the new update for the AD Application</p>
             <div class="footer-btns">
@@ -46,7 +46,7 @@
             </div>
         </div>
     </section>
-    <section class="right-main-body">
+    <section class="main-body">
         <div class="search-bar">
             <div class="search">
                 <img src="./images/bx-search.png"/>
@@ -132,501 +132,490 @@
             </div>
         </div>
 
-        <section class="table-employees" >
+
+        <div class="table-edits">
+            <div class="table-edits-items">
+                <img src="./images/arrow-turn left -down.svg"/>
+                <button>Delete</button>
+            </div>
+            <div>
+                <img src="./images/table-add.png"/>
+            </div>
+        </div>
+
+        <section class="table-employees">
             <table>
-                <thead>
-                   <!--<tr>-->
-                    <div class="table-first-row">
-                        <div class="table-first-row-btns">
-                            <img src="./images/arrow-turn left -down.svg"/>
-                            <button class="row-delete">Delete</button>
-                        </div>
-                        <div class="table-row-add">
-                            <img src="./images/table-add.png"/>
-                        </div>
-                    </div>
-                    <!--</tr>-->
+            <thead>
+                <tr>
+                    <th>
+                        <input type="checkbox">
+                    </th>
+                    <th>
+                        USER 
+                        <img src="./images/sorticon.svg"/>
+                    </th>
+                    <th>
+                        LOCATION 
+                        <img src="./images/sorticon.svg"/>
+                    </th>
+                    <th>
+                        DEPARTMENT
+                        <img src="./images/sorticon.svg"/>
+                    </th>
+                    <th>
+                        ROLE 
+                        <img src="./images/sorticon.svg"/>
+                    </th>
+                    <th>
+                        EMPNO 
+                        <img src="./images/sorticon.svg"/>
+                    </th>
+                    <th>
+                        STATUS
+                        <img src="./images/sorticon.svg"/>
+                    </th>
+                    <th>
+                        JOINDT
+                        <img src="./images/sorticon.svg"/>
+                    </th>
+                    <th>
+                        ...
+                    </th>
+                </tr>
             </thead>
             <tbody>
-                <tr class="col-names">
-                    <td class="check-col">
+                <tr>
+                    <td>
                         <input type="checkbox">
                     </td>
-                    <td>
-                        <div class="table-second-row">
-                            <p>USER</p>
-                            <img src="./images/sorticon.svg"/>
-                        </div>
+                    <td class="user-details">
+                            <img src="./images/avatar.png">
+                            <div>
+                                <p>Edgar Jones</p>
+                                <p class="user-email">edgar@tezo.com</p>
+                            </div>
                     </td>
                     <td>
-                        <div class="table-second-row">
-                            <p>LOCATION</p>
-                            <img src="./images/sorticon.svg"/>
-                        </div>
+                        Hyderabad
                     </td>
                     <td>
-                        <div class="table-second-row">
-                            <p>DEPARTMENT</p>
-                            <img src="./images/sorticon.svg"/>
-                        </div>
+                        Product Engg
                     </td>
-                    <td class="role-col">
-                        <div class="table-second-row">
-                            <p>ROLE</p>
-                            <img src="./images/sorticon.svg"/>
-                        </div>
+                    <td>
+                        Full Stack Developer
                     </td>
-                    <td class="emp-col">
-                        <div class="table-second-row">
-                            <p>EMPNO</p>
-                            <img src="./images/sorticon.svg"/>
-                        </div>
+                    <td>
+                        TZ002341
                     </td>
-                    <td class="status">
-                        <div class="table-second-row">
-                            <p>STATUS</p>
-                            <img src="./images/sorticon.svg"/>
-                        </div>
+                    <td>
+                        <button class="status-btn">Active</button>
                     </td>
-                    <td class="join-col">
-                        <div class="table-second-row">
-                            <p>JOIN DT</p>
-                            <img src="./images/sorticon.svg"/>
-                        </div>
+                    <td>
+                        12/03/2023
                     </td>
-                    <td class="others">
-                        <p>...</p>
+                    <td>
+                        ...
                     </td>
                 </tr>
                 <tr>
-                    <td class="check-col" >
+                    <td>
                         <input type="checkbox">
                     </td>
-                    <td>
-                        <div class="user-col">
-                            <img src="./images/avatar.png"/>
-                            <div class="user-details">
+                    <td class="user-details">
+                            <img src="./images/avatar.png">
+                            <div>
                                 <p>Edgar Jones</p>
-                                <p class="user-details-email">edgar@tezo.com</p>
+                                <p class="user-email">edgar@tezo.com</p>
                             </div>
-                        </div>
                     </td>
                     <td>
-                        <p>Hyderabad</p>
+                        Hyderabad
                     </td>
                     <td>
-                        <p>Product Engg</p>
+                        Product Engg
                     </td>
-                    <td class="role-col">
-                        <p>Full Stack Developer</p>
+                    <td>
+                        Full Stack Developer
                     </td>
-                    <td class="emp-col">
-                        <p>TZ002341</p>
+                    <td>
+                        TZ002341
                     </td>
-                    <td class="status">
-                        <button>Active</button>
+                    <td>
+                        <button class="status-btn">Active</button>
                     </td>
-                    <td class="join-col">
-                        <p>12/03/2023</p>
+                    <td>
+                        12/03/2023
                     </td>
-                    <td class="others">
-                        <p>...</p>
+                    <td>
+                        ...
                     </td>
                 </tr>
                 <tr>
-                    <td class="check-col">
+                    <td>
                         <input type="checkbox">
                     </td>
-                    <td>
-                        <div class="user-col">
-                            <img src="./images/avatar.png"/>
-                            <div class="user-details">
+                    <td class="user-details">
+                            <img src="./images/avatar.png">
+                            <div>
                                 <p>Edgar Jones</p>
-                                <p class="user-details-email">edgar@tezo.com</p>
+                                <p class="user-email">edgar@tezo.com</p>
                             </div>
-                        </div>
                     </td>
                     <td>
-                        <p>Hyderabad</p>
+                        Hyderabad
                     </td>
                     <td>
-                        <p>Product Engg</p>
+                        Product Engg
                     </td>
-                    <td class="role-col">
-                        <p>Full Stack Developer</p>
+                    <td>
+                        Full Stack Developer
                     </td>
-                    <td class="emp-col">
-                        <p>TZ002341</p>
+                    <td>
+                        TZ002341
                     </td>
-                    <td class="status">
-                        <button>Active</button>
+                    <td>
+                        <button class="status-btn">Active</button>
                     </td>
-                    <td class="join-col">
-                        <p>12/03/2023</p>
+                    <td>
+                        12/03/2023
                     </td>
-                    <td class="others">
-                        <p>...</p>
+                    <td>
+                        ...
                     </td>
                 </tr>
                 <tr>
-                    <td class="check-col">
+                    <td>
                         <input type="checkbox">
                     </td>
-                    <td>
-                        <div class="user-col">
-                            <img src="./images/avatar.png"/>
-                            <div class="user-details">
+                    <td class="user-details">
+                            <img src="./images/avatar.png">
+                            <div>
                                 <p>Edgar Jones</p>
-                                <p class="user-details-email">edgar@tezo.com</p>
+                                <p class="user-email">edgar@tezo.com</p>
                             </div>
-                        </div>
                     </td>
                     <td>
-                        <p>Hyderabad</p>
+                        Hyderabad
                     </td>
                     <td>
-                        <p>Product Engg</p>
+                        Product Engg
                     </td>
-                    <td class="role-col">
-                        <p>Full Stack Developer</p>
+                    <td>
+                        Full Stack Developer
                     </td>
-                    <td class="emp-col">
-                        <p>TZ002341</p>
+                    <td>
+                        TZ002341
                     </td>
-                    <td class="status">
-                        <button>Active</button>
+                    <td>
+                        <button class="status-btn">Active</button>
                     </td>
-                    <td class="join-col">
-                        <p>12/03/2023</p>
+                    <td>
+                        12/03/2023
                     </td>
-                    <td class="others">
-                        <p>...</p>
+                    <td>
+                        ...
                     </td>
                 </tr>
                 <tr>
-                    <td class="check-col">
+                    <td>
                         <input type="checkbox">
                     </td>
-                    <td>
-                        <div class="user-col">
-                            <img src="./images/avatar.png"/>
-                            <div class="user-details">
+                    <td class="user-details">
+                            <img src="./images/avatar.png">
+                            <div>
                                 <p>Edgar Jones</p>
-                                <p class="user-details-email">edgar@tezo.com</p>
+                                <p class="user-email">edgar@tezo.com</p>
                             </div>
-                        </div>
                     </td>
                     <td>
-                        <p>Hyderabad</p>
+                        Hyderabad
                     </td>
                     <td>
-                        <p>Product Engg</p>
+                        Product Engg
                     </td>
-                    <td class="role-col">
-                        <p>Full Stack Developer</p>
+                    <td>
+                        Full Stack Developer
                     </td>
-                    <td class="emp-col">
-                        <p>TZ002341</p>
+                    <td>
+                        TZ002341
                     </td>
-                    <td class="status">
-                        <button>Active</button>
+                    <td>
+                        <button class="status-btn">Active</button>
                     </td>
-                    <td class="join-col">
-                        <p>12/03/2023</p>
+                    <td>
+                        12/03/2023
                     </td>
-                    <td class="others">
-                        <p>...</p>
+                    <td>
+                        ...
                     </td>
                 </tr>
                 <tr>
-                    <td class="check-col">
+                    <td>
                         <input type="checkbox">
                     </td>
-                    <td>
-                        <div class="user-col">
-                            <img src="./images/avatar.png"/>
-                            <div class="user-details">
+                    <td class="user-details">
+                            <img src="./images/avatar.png">
+                            <div>
                                 <p>Edgar Jones</p>
-                                <p class="user-details-email">edgar@tezo.com</p>
+                                <p class="user-email">edgar@tezo.com</p>
                             </div>
-                        </div>
                     </td>
                     <td>
-                        <p>Hyderabad</p>
+                        Hyderabad
                     </td>
                     <td>
-                        <p>Product Engg</p>
+                        Product Engg
                     </td>
-                    <td class="role-col">
-                        <p>Full Stack Developer</p>
+                    <td>
+                        Full Stack Developer
                     </td>
-                    <td class="emp-col">
-                        <p>TZ002341</p>
+                    <td>
+                        TZ002341
                     </td>
-                    <td class="status">
-                        <button>Active</button>
+                    <td>
+                        <button class="status-btn">Active</button>
                     </td>
-                    <td class="join-col">
-                        <p>12/03/2023</p>
+                    <td>
+                        12/03/2023
                     </td>
-                    <td class="others">
-                        <p>...</p>
+                    <td>
+                        ...
                     </td>
                 </tr>
                 <tr>
-                    <td class="check-col">
+                    <td>
                         <input type="checkbox">
                     </td>
-                    <td>
-                        <div class="user-col">
-                            <img src="./images/avatar.png"/>
-                            <div class="user-details">
+                    <td class="user-details">
+                            <img src="./images/avatar.png">
+                            <div>
                                 <p>Edgar Jones</p>
-                                <p class="user-details-email">edgar@tezo.com</p>
+                                <p class="user-email">edgar@tezo.com</p>
                             </div>
-                        </div>
                     </td>
                     <td>
-                        <p>Hyderabad</p>
+                        Hyderabad
                     </td>
                     <td>
-                        <p>Product Engg</p>
+                        Product Engg
                     </td>
-                    <td class="role-col">
-                        <p>Full Stack Developer</p>
+                    <td>
+                        Full Stack Developer
                     </td>
-                    <td class="emp-col">
-                        <p>TZ002341</p>
+                    <td>
+                        TZ002341
                     </td>
-                    <td class="status">
-                        <button>Active</button>
+                    <td>
+                        <button class="status-btn">Active</button>
                     </td>
-                    <td class="join-col">
-                        <p>12/03/2023</p>
+                    <td>
+                        12/03/2023
                     </td>
-                    <td class="others">
-                        <p>...</p>
+                    <td>
+                        ...
                     </td>
                 </tr>
                 <tr>
-                    <td class="check-col">
+                    <td>
                         <input type="checkbox">
                     </td>
-                    <td>
-                        <div class="user-col">
-                            <img src="./images/avatar.png"/>
-                            <div class="user-details">
+                    <td class="user-details">
+                            <img src="./images/avatar.png">
+                            <div>
                                 <p>Edgar Jones</p>
-                                <p class="user-details-email">edgar@tezo.com</p>
+                                <p class="user-email">edgar@tezo.com</p>
                             </div>
-                        </div>
                     </td>
                     <td>
-                        <p>Hyderabad</p>
+                        Hyderabad
                     </td>
                     <td>
-                        <p>Product Engg</p>
+                        Product Engg
                     </td>
-                    <td class="role-col">
-                        <p>Full Stack Developer</p>
+                    <td>
+                        Full Stack Developer
                     </td>
-                    <td class="emp-col">
-                        <p>TZ002341</p>
+                    <td>
+                        TZ002341
                     </td>
-                    <td class="status">
-                        <button>Active</button>
+                    <td>
+                        <button class="status-btn">Active</button>
                     </td>
-                    <td class="join-col">
-                        <p>12/03/2023</p>
+                    <td>
+                        12/03/2023
                     </td>
-                    <td class="others">
-                        <p>...</p>
+                    <td>
+                        ...
                     </td>
                 </tr>
                 <tr>
-                    <td class="check-col">
+                    <td>
                         <input type="checkbox">
                     </td>
-                    <td>
-                        <div class="user-col">
-                            <img src="./images/avatar.png"/>
-                            <div class="user-details">
+                    <td class="user-details">
+                            <img src="./images/avatar.png">
+                            <div>
                                 <p>Edgar Jones</p>
-                                <p class="user-details-email">edgar@tezo.com</p>
+                                <p class="user-email">edgar@tezo.com</p>
                             </div>
-                        </div>
                     </td>
                     <td>
-                        <p>Hyderabad</p>
+                        Hyderabad
                     </td>
                     <td>
-                        <p>Product Engg</p>
+                        Product Engg
                     </td>
-                    <td class="role-col">
-                        <p>Full Stack Developer</p>
+                    <td>
+                        Full Stack Developer
                     </td>
-                    <td class="emp-col">
-                        <p>TZ002341</p>
+                    <td>
+                        TZ002341
                     </td>
-                    <td class="status">
-                        <button>Active</button>
+                    <td>
+                        <button class="status-btn">Active</button>
                     </td>
-                    <td class="join-col">
-                        <p>12/03/2023</p>
+                    <td>
+                        12/03/2023
                     </td>
-                    <td class="others">
-                        <p>...</p>
+                    <td>
+                        ...
                     </td>
                 </tr>
                 <tr>
-                    <td class="check-col">
+                    <td>
                         <input type="checkbox">
                     </td>
-                    <td>
-                        <div class="user-col">
-                            <img src="./images/avatar.png"/>
-                            <div class="user-details">
+                    <td class="user-details">
+                            <img src="./images/avatar.png">
+                            <div>
                                 <p>Edgar Jones</p>
-                                <p class="user-details-email">edgar@tezo.com</p>
+                                <p class="user-email">edgar@tezo.com</p>
                             </div>
-                        </div>
                     </td>
                     <td>
-                        <p>Hyderabad</p>
+                        Hyderabad
                     </td>
                     <td>
-                        <p>Product Engg</p>
+                        Product Engg
                     </td>
-                    <td class="role-col">
-                        <p>Full Stack Developer</p>
+                    <td>
+                        Full Stack Developer
                     </td>
-                    <td class="emp-col">
-                        <p>TZ002341</p>
+                    <td>
+                        TZ002341
                     </td>
-                    <td class="status">
-                        <button>Active</button>
+                    <td>
+                        <button class="status-btn">Active</button>
                     </td>
-                    <td class="join-col">
-                        <p>12/03/2023</p>
+                    <td>
+                        12/03/2023
                     </td>
-                    <td class="others">
-                        <p>...</p>
+                    <td>
+                        ...
                     </td>
                 </tr>
                 <tr>
-                    <td class="check-col">
+                    <td>
                         <input type="checkbox">
                     </td>
-                    <td>
-                        <div class="user-col">
-                            <img src="./images/avatar.png"/>
-                            <div class="user-details">
+                    <td class="user-details">
+                            <img src="./images/avatar.png">
+                            <div>
                                 <p>Edgar Jones</p>
-                                <p class="user-details-email">edgar@tezo.com</p>
+                                <p class="user-email">edgar@tezo.com</p>
                             </div>
-                        </div>
                     </td>
                     <td>
-                        <p>Hyderabad</p>
+                        Hyderabad
                     </td>
                     <td>
-                        <p>Product Engg</p>
+                        Product Engg
                     </td>
-                    <td class="role-col">
-                        <p>Full Stack Developer</p>
+                    <td>
+                        Full Stack Developer
                     </td>
-                    <td class="emp-col">
-                        <p>TZ002341</p>
+                    <td>
+                        TZ002341
                     </td>
-                    <td class="status">
-                        <button>Active</button>
+                    <td>
+                        <button class="status-btn">Active</button>
                     </td>
-                    <td class="join-col">
-                        <p>12/03/2023</p>
+                    <td>
+                        12/03/2023
                     </td>
-                    <td class="others">
-                        <p>...</p>
+                    <td>
+                        ...
                     </td>
                 </tr>
                 <tr>
-                    <td class="check-col">
+                    <td>
                         <input type="checkbox">
                     </td>
-                    <td>
-                        <div class="user-col">
-                            <img src="./images/avatar.png"/>
-                            <div class="user-details">
+                    <td class="user-details">
+                            <img src="./images/avatar.png">
+                            <div>
                                 <p>Edgar Jones</p>
-                                <p class="user-details-email">edgar@tezo.com</p>
+                                <p class="user-email">edgar@tezo.com</p>
                             </div>
-                        </div>
                     </td>
                     <td>
-                        <p>Hyderabad</p>
+                        Hyderabad
                     </td>
                     <td>
-                        <p>Product Engg</p>
+                        Product Engg
                     </td>
-                    <td class="role-col">
-                        <p>Full Stack Developer</p>
+                    <td>
+                        Full Stack Developer
                     </td>
-                    <td class="emp-col">
-                        <p>TZ002341</p>
+                    <td>
+                        TZ002341
                     </td>
-                    <td class="status">
-                        <button>Active</button>
+                    <td>
+                        <button class="status-btn">Active</button>
                     </td>
-                    <td class="join-col">
-                        <p>12/03/2023</p>
+                    <td>
+                        12/03/2023
                     </td>
-                    <td class="others">
-                        <p>...</p>
+                    <td>
+                        ...
                     </td>
                 </tr>
                 <tr>
-                    <td class="check-col">
+                    <td>
                         <input type="checkbox">
                     </td>
-                    <td>
-                        <div class="user-col">
-                            <img src="./images/avatar.png"/>
-                            <div class="user-details">
+                    <td class="user-details">
+                            <img src="./images/avatar.png">
+                            <div>
                                 <p>Edgar Jones</p>
-                                <p class="user-details-email">edgar@tezo.com</p>
+                                <p class="user-email">edgar@tezo.com</p>
                             </div>
-                        </div>
                     </td>
                     <td>
-                        <p>Hyderabad</p>
+                        Hyderabad
                     </td>
                     <td>
-                        <p>Product Engg</p>
+                        Product Engg
                     </td>
-                    <td class="role-col">
-                        <p>Full Stack Developer</p>
+                    <td>
+                        Full Stack Developer
                     </td>
-                    <td class="emp-col">
-                        <p>TZ002341</p>
+                    <td>
+                        TZ002341
                     </td>
-                    <td class="status">
-                        <button>Active</button>
+                    <td>
+                        <button class="status-btn">Active</button>
                     </td>
-                    <td class="join-col">
-                        <p>12/03/2023</p>
+                    <td>
+                        12/03/2023
                     </td>
-                    <td class="others">
-                        <p>...</p>
+                    <td>
+                        ...
                     </td>
                 </tr>
             </tbody>
-            </table>
+        </table>
         </section>
-
-
-
-
-
-
     </section>
 </body>
 </html>
